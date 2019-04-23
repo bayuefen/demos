@@ -114,3 +114,8 @@ print(res.url, res.json())
 #     if line:
 #         decoded_line = line.decode('utf-8')
 #         print(json.loads(decoded_line))
+
+# # Auth HTTP基本身份认证
+# auth = requests.auth.HTTPBasicAuth('user', 'passwd')
+# res = requests.get(domain + '/hidden-basic-auth/user/passwd', auth=auth)
+# print(res.json())
